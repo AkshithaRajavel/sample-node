@@ -1,1 +1,1 @@
-sudo node /home/ubuntu/nodejs/index.js
+sudo node /home/ubuntu/nodejs/index.js &
