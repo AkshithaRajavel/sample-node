@@ -12,9 +12,6 @@ version: 0.0
 # (You cannot specify both "os: linux" and "os: windows".)
 os: linux 
 # os: windows
-files:
-  - source: /
-    destination: /home/ubuntu/nodejs
 # During the Install deployment lifecycle event (which occurs between the 
 #   BeforeInstall and AfterInstall events), copy the specified files 
 #   in "source" starting from the root of the revision's file bundle 
@@ -24,6 +21,9 @@ files:
 # If you are not copying any files to the instance, then remove the
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
+files:
+  - source: /
+    destination: /home/ubuntu/nodejs
 # For deployments to Amazon Linux and Ubuntu Server instances,
 #   you can specify a "permissions" 
 #   section here that describes special permissions to apply to the files 
@@ -61,6 +61,10 @@ hooks:
 #   incomplete event declarations may cause associated deployments to fail.
 # During the BeforeInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
+  BeforeInstall:
+    - location: scripts/before_install.sh
+      timeout: 300
+      runas: ubuntu
 # During the AfterInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   AfterInstall:
