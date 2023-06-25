@@ -1,1 +1,2 @@
-sudo node /home/ubuntu/nodejs/index.js &
+forever stopall
+forever start /home/ubuntu/nodejs/app.js
