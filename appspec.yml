@@ -12,6 +12,9 @@ version: 0.0
 # (You cannot specify both "os: linux" and "os: windows".)
 os: linux 
 # os: windows
+files:
+  - source: /
+    destination: /home/ubuntu/nodejs
 # During the Install deployment lifecycle event (which occurs between the 
 #   BeforeInstall and AfterInstall events), copy the specified files 
 #   in "source" starting from the root of the revision's file bundle 
