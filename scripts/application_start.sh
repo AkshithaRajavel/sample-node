@@ -1,1 +1,1 @@
-node index.js
+node /home/ubuntu/nodejs/index.js
