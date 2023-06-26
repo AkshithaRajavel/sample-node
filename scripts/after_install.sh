@@ -1,2 +1,1 @@
-sudo npm install forever -g
-sudo npm install express
+sudo npm install /home/ubuntu/nodejs/package.json
