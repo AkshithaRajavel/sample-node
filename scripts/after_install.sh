@@ -1,2 +1,1 @@
-cd /home/ubuntu/nodejs
-npm install 
+sudo npm install --prefix /home/ubuntu/nodejs /home/ubuntu/nodejs
