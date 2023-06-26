@@ -1,1 +1,1 @@
-sudo npm install /home/ubuntu/nodejs/package.json
+sudo npm install /home/ubuntu/nodejs
