@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && move build ../deployment",
+    "build": "react-scripts build && cd ../deployment &&(if exist ./build rd /s /q build) && move ../frontend/build .",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
