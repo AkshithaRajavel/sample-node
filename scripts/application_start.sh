@@ -1,3 +1,1 @@
-cd /home/ubuntu/nodejs
-forever stopall
-forever start index.js
+sudo docker run -itd --rm -p4000:4000 --name sample_app sample_node
